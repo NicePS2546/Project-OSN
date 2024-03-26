@@ -22,6 +22,23 @@
 // 	})
 
 
+// 	$(window).scroll(function () {
+		
+// 		var scroll = $(window).scrollTop();
+// 		var box = $('.header-text').height();
+// 		var header = $('header').height();
+
+// 		if (scroll >= box - header) {
+// 			$("header").addClass("background-header");
+// 			$("header nav ul").addClass("nav-fix-margin-top");
+// 		} else {
+// 			$("header").removeClass("background-header");
+// 			$("header nav ul").removeClass("nav-fix-margin-top");
+// 		}
+// 	});
+
+// 	// Window Resize Mobile Menu Fix
+// 	mobileNav();
 
 
 // 	// Scroll animation init
@@ -273,25 +290,6 @@
         $(this).toggleClass('active');
         $('.header-area .nav').slideToggle(200);
     });
-
-	$(window).scroll(function () {
-		
-		var scroll = $(window).scrollTop();
-		var box = $('.header-text').height();
-		var header = $('header').height();
-
-		if (scroll >= box - header) {
-			$("header").addClass("background-header");
-			$("header nav ul").addClass("nav-fix-margin-top");
-		} else {
-			$("header").removeClass("background-header");
-			$("header nav ul").removeClass("nav-fix-margin-top");
-		}
-	});
-
-	// Window Resize Mobile Menu Fix
-	mobileNav();
-
 
     // Add active class to menu item based on scroll position
     $(window).on('scroll', function () {

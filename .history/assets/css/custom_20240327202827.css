@@ -170,7 +170,7 @@ color: #1e1e1e !important;
 }
 
 .nav li:hover a {
-  color: #fba70b !important;
+  color: #fba70b!important;
   transform: scale(1.1) perspective(1px);
   transition: all 0.5s ease 0s;
 }
